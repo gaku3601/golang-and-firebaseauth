@@ -1,6 +1,9 @@
 package main
 
 import (
+	"fmt"
+	"os"
+
 	"github.com/gaku3601/golang-and-firebaseauth/controllers"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
@@ -20,7 +23,11 @@ func main() {
 }
 
 func initDB() *gorm.DB {
-	db, err := gorm.Open("postgres", "host=localhost user=user password=password dbname=db sslmode=disable")
+	host := os.Getenv("HOST")
+	user := os.Getenv("USER")
+	password := os.Getenv("PASSWORD")
+	dbName := os.Getenv("DB")
+	db, err := gorm.Open("postgres", fmt.Sprintf("host=%s user=%s password=%s dbname=%s sslmode=disable", host, user, password, dbName))
 	if err != nil {
 		panic(err)
 	}
