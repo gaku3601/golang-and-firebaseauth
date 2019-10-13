@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gaku3601/golang-and-firebaseauth/controllers"
+	"github.com/gaku3601/golang-and-firebaseauth/src/controllers"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	_ "github.com/lib/pq"

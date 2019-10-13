@@ -5,7 +5,7 @@ ENV GOOS=linux
 ENV GOARCH=amd64
 WORKDIR /go/src/server
 COPY . .
-RUN go build main.go
+RUN go build src/main.go
 
 # runtime image
 FROM golang:1.13.1-alpine3.10

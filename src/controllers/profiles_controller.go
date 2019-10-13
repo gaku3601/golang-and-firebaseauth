@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"github.com/gaku3601/golang-and-firebaseauth/models"
-	auth "github.com/gaku3601/golang-and-firebaseauth/util"
+	"github.com/gaku3601/golang-and-firebaseauth/src/models"
+	auth "github.com/gaku3601/golang-and-firebaseauth/src/util"
 	"github.com/gin-gonic/gin"
 )
 
