@@ -1,3 +1,7 @@
 development:
     driver: postgres
+    open: host=localhost port=5432 user=user password=password dbname=db sslmode=disable
+
+production:
+    driver: postgres
     open: host=$HOST port=5432 user=$USER password=$PASSWORD dbname=$DB sslmode=disable

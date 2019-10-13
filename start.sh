@@ -1,2 +1,2 @@
-goose up
+goose -env production up
 /app/main
