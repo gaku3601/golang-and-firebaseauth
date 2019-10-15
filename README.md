@@ -24,3 +24,9 @@ herokuの環境変数には以下を設定する。
 "DB": "dbの名前",
 "FIREBASE_KEY": "先程base64化したfirebase key"
 ```
+
+また、containerモードで起動するため、以下コマンドを実行しておく必要がある。  
+
+```
+heroku stack:set container -a <app_name>
+```
